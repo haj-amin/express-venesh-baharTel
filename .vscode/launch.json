@@ -16,11 +16,11 @@
                 "redis_url": "redis://127.0.0.1/venesh",
                 "PORT": "5000",
                 "REDIS_PORT": "6379",
-                "VENESH_USERNAME": "info@7030.ir",
-                "VENESH_PASSWORD": "SeV3nTCi_VS@ndboX",
-                "VENESH_GRANT_TYPE": "password",
-                "VENESH_CLIENT_ID": "29",
-                "VENESH_CLIENT_SECRET": "8gC9TgwxAQG1vEWXSCYExnl9u3twUCYhQGFScuoT",
+                "VENESH_USERNAME": "",
+                "VENESH_PASSWORD": "",
+                "VENESH_GRANT_TYPE": "",
+                "VENESH_CLIENT_ID": "",
+                "VENESH_CLIENT_SECRET": "",
             },
         }
     ]
