@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  web:
+    build: .
+    working_dir: ./api
+    command: node app.js runserver 0.0.0.0:8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./mydata:/code
+    NODE_ENV: development
+    environment:
+        - VENESH_USERNAME="password"
+        - VENESH_PASSWORD="password"
+        - VENESH_GRANT_TYPE="password"
+        - "VENESH_CLIENT_ID="password"
+        - VENESH_CLIENT_SECRET="password"
+    depends_on:
+        - db
+  db:
+    image: "redis:alpine"
+    port: "6379:6379"
+    NODE_ENV: development
+    environment: 
+    - redis_url=redis://127.0.0.1/venesh
